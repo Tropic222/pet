@@ -16,7 +16,7 @@ function addTask(input, taskBox) {
       <label>
         <input type="checkbox" /> ${taskText}
       </label>
-      <button class="buttonCloseTask">&times;</button>
+      <button class="buttonСloseTask">&times;</button>
     `;
 
     taskBox.appendChild(newTask); 
@@ -31,3 +31,11 @@ addButtonHigh.addEventListener('click', function(event) {
 addButtonLow.addEventListener('click', function(event) {
   addTask(inputLow, taskBoxLow);
 });
+
+function removeTask(event) {
+	if (event.target.classList.contains('buttonСloseTask')) {
+		event.target.parentElement.remove();
+	}
+}
+taskBoxHigh.addEventListener('click', removeTask)
+taskBoxLow.addEventListener('click', removeTask)

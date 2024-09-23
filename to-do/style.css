@@ -111,7 +111,7 @@ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	cursor: pointer;
 }
 
-.buttonСloseTaskHigh {
+.buttonСloseTask {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
