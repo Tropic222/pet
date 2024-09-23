@@ -39,3 +39,16 @@ function removeTask(event) {
 }
 taskBoxHigh.addEventListener('click', removeTask)
 taskBoxLow.addEventListener('click', removeTask)
+
+
+inputHigh.addEventListener('keyup', function(event) {
+	if(event.key === 'Enter') {
+		addTask(inputHigh, taskBoxHigh)
+	}
+})
+
+inputLow.addEventListener('keyup', function(event) {
+  if (event.key === 'Enter') {
+    addTask(inputLow, taskBoxLow);
+  }
+});
