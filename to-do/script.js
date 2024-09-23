@@ -52,3 +52,17 @@ inputLow.addEventListener('keyup', function(event) {
     addTask(inputLow, taskBoxLow);
   }
 });
+
+
+function saveTask() {
+	const highTasks = taskBoxHigh.innerHTML
+	const lowTasks = taskBoxLow.innerHTML;
+	localStorage.setItem('highTasks', highTasks)
+	localStorage.setItem('lowTasks', lowTasks)
+}
+
+
+
+taskBoxHigh.addEventListener('DOMSubtreeModified', saveTask);
+taskBoxLow.addEventListener('DOMSubtreeModified', saveTask);
+
