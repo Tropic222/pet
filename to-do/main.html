@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>To-Do</title>
+</head>
+<body>
+  <div class="container">
+    <div class="todoContainer">
+      <div id="taskBoxHigh" class="taskBoxHigh">
+        <p class="paragraphHigh">HIGH</p>
+
+        <form class="addTask">
+          <label for="inputHigh">
+            <input type="text" id="inputHigh" placeholder="Добавить важных дел" />
+
+          </label>
+          <button id='addButtonHigh' class="addButtonHigh">&dagger;</button>
+        </form>
+
+        <div class="task">
+          <label for="task">
+            <input class="checkbox" type="checkbox" />Задача 4
+          </label>
+          <button class="buttonСloseTask">&times;</button>
+        </div>
+
+        <div class="task">
+          <label for="task">
+            <input class="checkbox" type="checkbox" />Задача 2
+          </label>
+          </label>
+          <button class="buttonСloseTask">&times;</button>
+        </div>
+
+        <div class="task">
+          <label for="task">
+            <input class="checkbox" type="checkbox" />Задача 3
+          </label>
+          <button class="buttonСloseTask">&times;</button>
+        </div>
+      </div>
+
+      <div id='taskBoxLow' class="taskBoxLow">
+        <p class="paragraphLow">LOW</p>
+
+        <form class="addTask">
+          <label for="inputLow">
+            <input type="text" id="inputLow" placeholder="Добавить важных дел" />
+          </label>
+          <button id='addButtonLow' class="addButtonLow">&dagger;</button>
+        </form>
+
+        <div class="task">
+          <label for="task">
+            <input class="checkbox" type="checkbox" />Задача 1
+          </label>
+          <button class="buttonСloseTask">&times;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+	<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: white;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+
+
+.todoContainer {
+width: 100%;
+max-width: 540px;
+margin: 100px auto 20px;
+padding: 40px 30px 70px;
+border-radius: 10px;
+flex-basis: 100%;
+margin-top: 20px;
+padding: 20px;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.paragraphHigh {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center
+}
+
+.addTask {
+display: flex;
+align-items: center;
+justify-content: center; 
+	
+margin-bottom: 10px;
+flex-basis: 100%;
+margin-top: 20px;
+padding: 20px;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.addTask input[type="text"] {
+width: 420px;
+padding: 10px;
+border: none;
+
+	
+}
+.addTask input[type="text"]:focus {
+	outline: none;
+}
+
+.addButtonHigh {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	border-radius: 0;
+	color: black;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+	border:none;
+	background-color: white;
+}
+
+.addButtonHigh:hover {
+	background-color: rgb(211, 252, 32);
+}
+
+.task {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+flex-basis: 100%;
+margin-top: 20px;
+padding: 20px;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task label {
+	flex-grow: 1;
+	margin-left: 10px;
+	cursor: pointer;
+}
+
+.buttonСloseTask {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	color: silver;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+	border:none;
+	background-color: white;
+}
+
+.buttonСloseTaskHigh:hover {
+	color: red;
+}
+
+
+
+.paragraphLow {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center
+}
+
+.addButtonLow {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	border-radius: 0;
+	color: black;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+	border:none;
+	background-color: white;
+}
+
+.addButtonLow:hover {
+	background-color:rgb(211, 252, 32);
+}
+
+.checkbox{
+	margin-right: 10px;
+}
+
